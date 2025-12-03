@@ -273,7 +273,7 @@ p {
 }
 
 [data-theme="dark"] .col-md-2 a {
-    color: #8ba3c4 !important;
+    color: #b8c5d6 !important;
 }
 
 /* Dark mode - buttons and interactive elements */
@@ -310,7 +310,7 @@ p {
 
 /* Dark mode - links in bio */
 [data-theme="dark"] .col-md-10 a {
-    color: #8ba3c4 !important;
+    color: #b8c5d6 !important;
 }
 
 /* Dark mode - arxiv/publication links */
@@ -328,9 +328,10 @@ p {
     color: #F8F8F8 !important;
 }
 
-/* Dark mode - logo banner stays white */
+/* Dark mode - logo banner matches background */
 [data-theme="dark"] .logo-banner {
-    background: white !important;
+    background: #1a2332 !important;
+    box-shadow: none !important;
 }
 
 /* Dark mode - section heading underline */
