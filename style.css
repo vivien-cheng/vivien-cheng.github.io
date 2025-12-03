@@ -21,10 +21,11 @@
     --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
 }
 
-/* Dark mode variables - Dark Blue theme */
+/* Dark mode variables - Dark Blue theme (no red) */
 [data-theme="dark"] {
-    --primary-color: #8C1515;
-    --primary-hover: #7A0E0E;
+    --primary-color: #5a8fc7;
+    --primary-hover: #4a7ab0;
+    --accent-color: #8ba3c4;
     --bg-color: #1a2332;
     --text-color: #F8F8F8;
     --border-color: #2d3a4f;
@@ -271,7 +272,7 @@ p {
     color: #8ba3c4 !important;
 }
 
-[data-theme="dark"] .col-md-3 a {
+[data-theme="dark"] .col-md-2 a {
     color: #8ba3c4 !important;
 }
 
@@ -308,7 +309,7 @@ p {
 }
 
 /* Dark mode - links in bio */
-[data-theme="dark"] .col-md-9 a {
+[data-theme="dark"] .col-md-10 a {
     color: #8ba3c4 !important;
 }
 
@@ -330,6 +331,50 @@ p {
 /* Dark mode - logo banner stays white */
 [data-theme="dark"] .logo-banner {
     background: white !important;
+}
+
+/* Dark mode - section heading underline */
+[data-theme="dark"] section h2::after {
+    background: linear-gradient(135deg, #5a8fc7, #8ba3c4);
+}
+
+/* Dark mode - reference card accent */
+[data-theme="dark"] .reference::before {
+    background: #5a8fc7;
+}
+
+/* Dark mode - reference hover border */
+[data-theme="dark"] .reference:hover {
+    border-color: #5a8fc7;
+}
+
+/* Dark mode - content card accent */
+[data-theme="dark"] .content-card::before {
+    background: linear-gradient(135deg, #5a8fc7, #8ba3c4);
+}
+
+/* Dark mode - content card hover */
+[data-theme="dark"] .content-card:hover {
+    border-color: #5a8fc7;
+}
+
+/* Dark mode - skill tags */
+[data-theme="dark"] .skill-tag {
+    background: #2d3a4f;
+}
+
+[data-theme="dark"] .skill-tag:hover {
+    background: #3d4a5f;
+}
+
+/* Dark mode - timeline dot */
+[data-theme="dark"] .timeline-item::before {
+    background: #5a8fc7;
+}
+
+/* Dark mode - footer link hover */
+[data-theme="dark"] footer a:hover {
+    color: #5a8fc7 !important;
 }
 
 .hero-subtitle {
