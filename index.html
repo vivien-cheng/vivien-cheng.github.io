@@ -12,13 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
-    <div id="particles-js" class="animated-background"></div>
-
+    
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
         <div class="container">
@@ -221,95 +219,6 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 
-    <script>
-        // Particle configuration function that returns theme-appropriate colors
-        function getParticleConfig(isDark = false) {
-            const particleColor = isDark ? '#ffffff' : '#000000';
-            const lineColor = isDark ? '#ffffff' : '#000000';
-            const opacity = isDark ? 0.15 : 0.05;
-            const lineOpacity = isDark ? 0.2 : 0.1;
-
-            return {
-                particles: {
-                    number: { value: 80, density: { enable: true, value_area: 800 } },
-                    color: { value: particleColor },
-                    shape: {
-                        type: 'triangle',
-                        stroke: { width: 0, color: particleColor },
-                        polygon: { nb_sides: 5 },
-                        image: { src: 'img/github.svg', width: 100, height: 100 }
-                    },
-                    opacity: {
-                        value: opacity,
-                        random: false,
-                        anim: { enable: false, speed: 1, opacity_min: opacity, sync: false }
-                    },
-                    size: {
-                        value: 3,
-                        random: true,
-                        anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
-                    },
-                    line_linked: {
-                        enable: true,
-                        distance: 150,
-                        color: lineColor,
-                        opacity: lineOpacity,
-                        width: 1
-                    },
-                    move: {
-                        enable: true,
-                        speed: 0.2,
-                        direction: 'none',
-                        random: true,
-                        straight: false,
-                        out_mode: 'out',
-                        bounce: true,
-                        attract: { enable: false, rotateX: 600, rotateY: 1200 }
-                    }
-                },
-                interactivity: {
-                    detect_on: 'canvas',
-                    events: {
-                        onhover: { enable: true, mode: 'repulse' },
-                        onclick: { enable: true, mode: 'push' },
-                        resize: true
-                    },
-                    modes: {
-                        grab: { distance: 400, line_linked: { opacity: 1 } },
-                        bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
-                        repulse: { distance: 200, duration: 0.4 },
-                        push: { particles_nb: 4 },
-                        remove: { particles_nb: 2 }
-                    }
-                },
-                retina_detect: true
-            };
-        }
-
-        // Initialize particles with current theme
-        function initParticles() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const isDark = currentTheme === 'dark';
-            particlesJS('particles-js', getParticleConfig(isDark));
-        }
-
-        // Update particles when theme changes
-        function updateParticles(isDark) {
-            // Clear existing particles
-            if (window.pJSDom && window.pJSDom[0] && window.pJSDom[0].pJS) {
-                window.pJSDom[0].pJS.fn.vendors.destroypJS();
-                window.pJSDom = [];
-            }
-            // Reinitialize with new theme colors
-            particlesJS('particles-js', getParticleConfig(isDark));
-        }
-
-        // Initialize particles on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            initParticles();
-        });
-    </script>
-
     <!-- Theme Toggle Script -->
     <script>
         // Theme toggle functionality
@@ -331,9 +240,6 @@
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
             updateThemeIcon(newTheme);
-
-            // Update particles with new theme
-            updateParticles(newTheme === 'dark');
         });
 
         function updateThemeIcon(theme) {
