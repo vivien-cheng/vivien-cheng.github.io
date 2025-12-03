@@ -273,7 +273,7 @@ p {
 }
 
 [data-theme="dark"] .col-md-2 a {
-    color: #b8c5d6 !important;
+    color: #7db4e6 !important;
 }
 
 /* Dark mode - buttons and interactive elements */
@@ -310,7 +310,7 @@ p {
 
 /* Dark mode - links in bio */
 [data-theme="dark"] .col-md-10 a {
-    color: #b8c5d6 !important;
+    color: #7db4e6 !important;
 }
 
 /* Dark mode - arxiv/publication links */
