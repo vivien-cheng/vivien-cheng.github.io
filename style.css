@@ -334,6 +334,11 @@ p {
     box-shadow: none !important;
 }
 
+/* Dark mode - invert Tesla logo colors */
+[data-theme="dark"] .logo-banner img[alt="Tesla"] {
+    filter: invert(1) brightness(2);
+}
+
 /* Dark mode - section heading underline */
 [data-theme="dark"] section h2::after {
     background: linear-gradient(135deg, #5a8fc7, #8ba3c4);
