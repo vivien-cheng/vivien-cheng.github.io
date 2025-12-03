@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vivien Cheng's personal website showcasing research at Stanford in ML Systems, GPU Kernel Optimization, and Compound AI Systems.">
+    <meta name="keywords" content="Vivien Cheng, ML Systems, GPU Optimization, CUDA, AI, Machine Learning, Stanford, Hazy Research, Tesla, Jump Trading">
+    <title>Vivien Cheng</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <div id="particles-js" class="animated-background"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#">Vivien Cheng</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/viviencheng-/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/vivien-cheng" target="_blank" rel="noopener noreferrer" title="GitHub">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                  <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- About Me Section -->
+        <section id="about" class="mb-4">
+            <h2>About Me</h2>
+            <div class="row align-items-start">
+                <div class="col-md-3">
+                  <img src="Headshot.png" alt="Vivien Cheng Headshot" class="img-fluid" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                  <p class="mt-3 text-center"><a href="mailto:vicheng@stanford.edu" style="color: var(--primary-color); font-weight: 600;">vicheng [at] stanford.edu</a></p>
+                  <div class="text-center">
+                    <a href="https://www.linkedin.com/in/viviencheng-/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); margin-right: 15px;"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://github.com/vivien-cheng" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);"><i class="fab fa-github fa-lg"></i></a>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                    <p>Welcome! I'm Vi, a student at Stanford University finishing up my B.S. in Electrical Engineering and a coterminal M.S. in Computer Science, graduating in Spring 2026. I'm a member of the Tau Beta Pi Engineering Honor Society.</p>
+
+                    <p>I'm a current researcher at the <a href="https://hazyresearch.stanford.edu/" target="_blank" rel="noopener noreferrer">Hazy Research Lab</a> under Professor Christopher R&eacute;. My research interests span efficient ML systems, GPU kernel optimization, compound AI systems, and hardware-software co-design. Previously, I was the national valedictorian in Germany for the German Abitur 2022.</p>
+
+                    <p>Outside of research, I'm deeply passionate about education, sustainability, and exploring the outdoors.</p>
+
+                    <p>Feel free to contact me at <a href="mailto:vicheng@stanford.edu">vicheng@stanford.edu</a>. I'm open to collaborations and conversations regarding ML systems, GPU optimization, or related areas.</p>
+
+                    <!-- Affiliation Logos -->
+                    <div class="affiliation-logos mt-4">
+                      <div class="logo-banner" style="background: white; border-radius: 12px; padding: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div class="d-flex align-items-center justify-content-center" style="gap: 35px; flex-wrap: wrap;">
+                          <img src="https://identity.stanford.edu/wp-content/uploads/sites/3/2020/07/block-s-right.png" alt="Stanford" style="height: 100px; opacity: 1.0;" title="Stanford University">
+                          <img src="hazy.png" alt="Hazy Research" style="height: 65px; opacity: 1.0;" title="Hazy Research Lab">
+                          <img src="jump.png" alt="Jump Trading" style="height: 45px; opacity: 1.0;" title="Jump Trading">
+                          <img src="tesla.png" alt="Tesla" style="height: 70px; opacity: 1.0;" title="Tesla">
+                          <img src="bmw.png" alt="BMW" style="height: 65px; opacity: 1.0;" title="BMW">
+                          <img src="benz.png" alt="Mercedes-Benz" style="height: 80px; opacity: 1.0;" title="Mercedes-Benz">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-4">
+            <h2>Experience</h2>
+
+            <h4 class="mt-4 mb-3">Research</h4>
+
+            <div class="reference">
+              <span class="author">Graduate Researcher, Hazy Research Lab</span> <em class="award-date">Sept 2024 - Present</em><br>
+              <span class="title">Stanford University &bull; PI: Prof. Christopher R&eacute;</span>
+            </div>
+
+            <div class="reference">
+              <span class="author">Undergraduate Researcher, Graduate School of Business</span> <em class="award-date">Nov 2022 - May 2023</em><br>
+              <span class="title">Stanford University &bull; Advisor: Prof. Greg Buchak</span>
+            </div>
+
+            <div class="reference">
+              <span class="author">Game Theory Researcher, Institute of Theoretical Mathematics</span> <em class="award-date">Jan 2021 - Feb 2021</em><br>
+              <span class="title">University of Bremen &bull; Bremen, Germany</span>
+            </div>
+
+            <h4 class="mt-4 mb-3">Industry</h4>
+
+            <div class="reference">
+              <span class="author">Quantitative Trader Intern (4-week extension, sole recipient)</span> <em class="award-date">Aug 2025 - Sep 2025</em><br>
+              <span class="title">Jump Trading LLC &bull; New York City, NY</span>
+            </div>
+
+            <div class="reference">
+              <span class="author">Quantitative Research Intern (GPU systems)</span> <em class="award-date">Jun 2025 - Aug 2025</em><br>
+              <span class="title">Jump Trading LLC &bull; Chicago, IL</span>
+            </div>
+
+            <div class="reference">
+              <span class="author">AI/ML Intern</span> <em class="award-date">Jun 2024 - Sep 2024</em><br>
+              <span class="title">Tesla, Inc. &bull; Austin, TX</span>
+            </div>
+
+            <div class="reference">
+              <span class="author">Autonomous Systems Intern</span> <em class="award-date">Jun 2023 - Sep 2023</em><br>
+              <span class="title">L&uuml;rssen Yachts &bull; Bremen, Germany</span>
+            </div>
+
+            <div class="reference">
+              <span class="author">ML Engineering Intern</span> <em class="award-date">Jun 2022 - Sep 2022</em><br>
+              <span class="title">BMW &bull; Munich, Germany</span>
+            </div>
+
+            <div class="reference">
+              <span class="author">Software Engineering Intern</span> <em class="award-date">Jan 2022 - Jun 2022</em><br>
+              <span class="title">Mercedes-Benz &bull; Bremen, Germany</span>
+            </div>
+
+            <div class="reference">
+              <span class="author">Parliamentary Research Intern</span> <em class="award-date">Sep 2021 - Dec 2021</em><br>
+              <span class="title">German Bundestag &bull; Berlin, Germany</span>
+            </div>
+
+            <div class="reference">
+              <span class="author">High School Intern</span> <em class="award-date">2018 - 2021</em><br>
+              <span class="title">Volkswagen / Solar Farm / Beck's Brewery &bull; Germany and China</span>
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-4">
+            <h2>Technical Skills</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="reference">
+                  <span class="author">Systems & Hardware</span><br>
+                  <span class="title">CUDA, Nsight Compute, PTX/SASS analysis, Verilog, embedded C++, Vivado, Simulink</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="reference">
+                  <span class="author">ML Systems</span><br>
+                  <span class="title">PyTorch Distributed (DDP, NCCL), JAX, physics-informed neural networks, PPO</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="reference">
+                  <span class="author">Tools</span><br>
+                  <span class="title">Yosys, Icarus Verilog, PostgreSQL, FastAPI, MATLAB</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="reference">
+                  <span class="author">Languages</span><br>
+                  <span class="title">Python, C++, C, SQL; Mandarin (native), German (fluent), French (B2), Spanish (intermediate)</span>
+                </div>
+              </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 mb-2 mb-md-0">
+                    <a href="https://github.com/vivien-cheng" class="text-white mr-3">GitHub</a>
+                    <a href="https://www.linkedin.com/in/viviencheng-/" class="text-white mr-3">LinkedIn</a>
+                    <a href="https://viviencheng.com" class="text-white">Website</a>
+                </div>
+                <div class="col-12 col-md-4 text-md-right">
+                    &copy; Vivien Cheng <span id="year"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        // Particle configuration function that returns theme-appropriate colors
+        function getParticleConfig(isDark = false) {
+            const particleColor = isDark ? '#ffffff' : '#000000';
+            const lineColor = isDark ? '#ffffff' : '#000000';
+            const opacity = isDark ? 0.15 : 0.05;
+            const lineOpacity = isDark ? 0.2 : 0.1;
+
+            return {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: particleColor },
+                    shape: {
+                        type: 'triangle',
+                        stroke: { width: 0, color: particleColor },
+                        polygon: { nb_sides: 5 },
+                        image: { src: 'img/github.svg', width: 100, height: 100 }
+                    },
+                    opacity: {
+                        value: opacity,
+                        random: false,
+                        anim: { enable: false, speed: 1, opacity_min: opacity, sync: false }
+                    },
+                    size: {
+                        value: 3,
+                        random: true,
+                        anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: lineColor,
+                        opacity: lineOpacity,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 0.2,
+                        direction: 'none',
+                        random: true,
+                        straight: false,
+                        out_mode: 'out',
+                        bounce: true,
+                        attract: { enable: false, rotateX: 600, rotateY: 1200 }
+                    }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: {
+                        onhover: { enable: true, mode: 'repulse' },
+                        onclick: { enable: true, mode: 'push' },
+                        resize: true
+                    },
+                    modes: {
+                        grab: { distance: 400, line_linked: { opacity: 1 } },
+                        bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+                        repulse: { distance: 200, duration: 0.4 },
+                        push: { particles_nb: 4 },
+                        remove: { particles_nb: 2 }
+                    }
+                },
+                retina_detect: true
+            };
+        }
+
+        // Initialize particles with current theme
+        function initParticles() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const isDark = currentTheme === 'dark';
+            particlesJS('particles-js', getParticleConfig(isDark));
+        }
+
+        // Update particles when theme changes
+        function updateParticles(isDark) {
+            // Clear existing particles
+            if (window.pJSDom && window.pJSDom[0] && window.pJSDom[0].pJS) {
+                window.pJSDom[0].pJS.fn.vendors.destroypJS();
+                window.pJSDom = [];
+            }
+            // Reinitialize with new theme colors
+            particlesJS('particles-js', getParticleConfig(isDark));
+        }
+
+        // Initialize particles on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initParticles();
+        });
+    </script>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+
+        // Update icon based on current theme
+        updateThemeIcon(currentTheme);
+
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+
+            // Update particles with new theme
+            updateParticles(newTheme === 'dark');
+        });
+
+        function updateThemeIcon(theme) {
+            if (theme === 'dark') {
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                themeIcon.className = 'fas fa-moon';
+            }
+        }
+    </script>
+
+    <!-- Navbar Navigation Script -->
+    <script>
+        $(document).ready(function(){
+            $('.navbar-nav .nav-item a').click(function(event){
+                var href = $(this).attr('href');
+
+                // Only prevent default for internal anchor links (starting with #)
+                if (href && href.startsWith('#')) {
+                    event.preventDefault(); // Prevent default anchor behavior
+
+                    $('.navbar-nav .nav-item').removeClass('active');
+
+                    // Add 'active' class to the current clicked item
+                    $(this).parent().addClass('active');
+
+                    var sectionId = href; // Get the target section id (like #about)
+                    var navbarHeight = $('.navbar').outerHeight(); // Get the navbar height
+
+                    $('html, body').animate({
+                        scrollTop: $(sectionId).offset().top - navbarHeight // Adjust the scroll position
+                    }, 1000);
+                }
+                // External links will work normally
+            });
+        });
+    </script>
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vivien Cheng",
+    "url": "https://viviencheng.com",
+    "email": "vicheng@stanford.edu",
+    "sameAs": [
+      "https://www.linkedin.com/in/viviencheng-/",
+      "https://github.com/vivien-cheng"
+    ],
+    "jobTitle": "Graduate Researcher",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Stanford University"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Stanford University"
+      },
+      {
+        "@type": "HighSchool",
+        "name": "Hermann-Bose-Gymnasium"
+      }
+    ],
+    "knowsAbout": ["ML Systems", "GPU Optimization", "CUDA", "AI", "Machine Learning", "Hardware-Software Co-Design"]
+  }
+  </script>
+
+</body>
+</html>
