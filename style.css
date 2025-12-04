@@ -246,8 +246,8 @@ p {
 }
 
 [data-theme="dark"] .navbar.bg-primary {
-    background-color: white !important;
-    border-bottom: 1px solid #E5E5E5;
+    background-color: #e0e0e0 !important;
+    border-bottom: 1px solid #c0c0c0;
 }
 
 /* Navbar text colors for white background */
