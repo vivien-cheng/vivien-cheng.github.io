@@ -1,12 +1,12 @@
 /* Root variables for theming */
 :root {
-    --primary-color: #8C1515;
-    --primary-hover: #7A0E0E;
+    --primary-color: #1B5E20;
+    --primary-hover: #0D3E10;
     --secondary-color: #334E68;
     --accent-color: #C48F1F;
     --success-color: #28a745;
     --warning-color: #C48F1F;
-    --danger-color: #8C1515;
+    --danger-color: #1B5E20;
     --light-color: #F8F8F8;
     --dark-color: #1A1A1A;
     --bg-color: #ffffff;
