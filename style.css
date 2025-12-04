@@ -332,6 +332,7 @@ p {
 [data-theme="dark"] .logo-banner {
     background: #1a2332 !important;
     box-shadow: none !important;
+    border: 1px solid #4a5568 !important;
 }
 
 /* Dark mode - invert Tesla logo colors */
