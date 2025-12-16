@@ -4,6 +4,8 @@
     --primary-hover: #27272a;
     --secondary-color: #71717a;
     --accent-color: #3f3f46;
+    --link-color: #2563eb;
+    --link-hover: #1d4ed8;
     --success-color: #22c55e;
     --warning-color: #f59e0b;
     --danger-color: #ef4444;
@@ -476,6 +478,30 @@ p {
 [data-theme="dark"] ::selection {
     background: rgba(96, 165, 250, 0.3);
     color: var(--text-color);
+}
+
+/* ============================================
+   LIGHT MODE - Blue links only
+   ============================================ */
+
+/* Light mode - links in bio */
+.col-md-10 a {
+    color: var(--link-color);
+    transition: all 0.2s ease;
+}
+
+.col-md-10 a:hover {
+    color: var(--link-hover);
+}
+
+/* Light mode - arxiv/publication links */
+.arxiv-link {
+    background: var(--link-color);
+    color: white !important;
+}
+
+.arxiv-link:hover {
+    background: var(--link-hover);
 }
 
 .hero-subtitle {
