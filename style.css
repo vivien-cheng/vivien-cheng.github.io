@@ -21,23 +21,23 @@
     --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
 }
 
-/* Dark mode variables - Professional Dark theme */
+/* Dark mode variables - Premium Dark theme with blue accent */
 [data-theme="dark"] {
-    --primary-color: #fafafa;
-    --primary-hover: #e4e4e7;
-    --accent-color: #a1a1aa;
+    --primary-color: #60a5fa;
+    --primary-hover: #3b82f6;
+    --accent-color: #93c5fd;
     --bg-color: #09090b;
     --bg-card: #18181b;
     --bg-elevated: #27272a;
     --text-color: #fafafa;
     --text-secondary: #a1a1aa;
-    --border-color: #27272a;
+    --border-color: rgba(255, 255, 255, 0.08);
     --light-color: #27272a;
     --dark-color: #fafafa;
     --shadow-light: 0 1px 2px rgba(0, 0, 0, 0.4);
     --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.5);
     --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.6);
-    --shadow-glow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 20px rgba(96, 165, 250, 0.15);
 }
 
 /* Import Google Fonts */
@@ -267,17 +267,19 @@ p {
    PROFESSIONAL DARK MODE ENHANCEMENTS
    ============================================ */
 
-/* Dark mode - clean cards */
+/* Dark mode - glassmorphism cards */
 [data-theme="dark"] .reference,
 [data-theme="dark"] .content-card {
-    background: var(--bg-card) !important;
+    background: rgba(24, 24, 27, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--border-color) !important;
 }
 
 [data-theme="dark"] .reference:hover,
 [data-theme="dark"] .content-card:hover {
-    border-color: #3f3f46 !important;
-    box-shadow: var(--shadow-medium);
+    border-color: rgba(96, 165, 250, 0.3) !important;
+    box-shadow: var(--shadow-glow);
 }
 
 /* Dark mode - accent left border on hover */
@@ -298,9 +300,9 @@ p {
     color: var(--text-secondary) !important;
 }
 
-/* Dark mode - buttons */
+/* Dark mode - buttons with glow */
 [data-theme="dark"] .btn-primary {
-    background: var(--text-color) !important;
+    background: var(--primary-color) !important;
     border: none !important;
     color: #09090b !important;
     font-weight: 600;
@@ -309,14 +311,17 @@ p {
 [data-theme="dark"] .btn-primary:hover,
 [data-theme="dark"] .btn-primary:focus,
 [data-theme="dark"] .btn-primary:active {
-    background: var(--text-secondary) !important;
+    background: var(--primary-hover) !important;
+    box-shadow: 0 0 24px rgba(96, 165, 250, 0.3);
     transform: translateY(-1px);
 }
 
-/* Dark mode - navbar */
+/* Dark mode - navbar with glassmorphism */
 [data-theme="dark"] .navbar.bg-primary {
-    background: var(--bg-color) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: rgba(9, 9, 11, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color) !important;
 }
 
 [data-theme="dark"] .navbar-brand {
@@ -341,44 +346,46 @@ p {
 }
 
 [data-theme="dark"] .theme-toggle:hover {
-    border-color: var(--text-secondary) !important;
-    color: var(--text-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    box-shadow: 0 0 12px rgba(96, 165, 250, 0.2);
 }
 
 /* Dark mode - links */
 [data-theme="dark"] .col-md-10 a {
-    color: var(--text-color) !important;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    color: var(--primary-color) !important;
     transition: all 0.2s ease;
 }
 
 [data-theme="dark"] .col-md-10 a:hover {
-    opacity: 0.7;
+    text-shadow: 0 0 12px rgba(96, 165, 250, 0.4);
 }
 
 /* Dark mode - arxiv/publication links */
 [data-theme="dark"] .arxiv-link {
     background: var(--bg-elevated) !important;
-    color: var(--text-color) !important;
+    color: var(--primary-color) !important;
     border: 1px solid var(--border-color);
 }
 
 [data-theme="dark"] .arxiv-link:hover {
-    background: var(--text-color) !important;
+    background: var(--primary-color) !important;
     color: #09090b !important;
+    box-shadow: 0 0 16px rgba(96, 165, 250, 0.25);
 }
 
 /* Dark mode - award date badges */
 [data-theme="dark"] .award-date {
-    background: var(--bg-elevated) !important;
-    color: var(--text-secondary) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(96, 165, 250, 0.1) !important;
+    color: var(--primary-color) !important;
+    border: 1px solid rgba(96, 165, 250, 0.2);
 }
 
-/* Dark mode - logo banner */
+/* Dark mode - logo banner with glassmorphism */
 [data-theme="dark"] .logo-banner {
-    background: var(--bg-card) !important;
+    background: rgba(24, 24, 27, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     box-shadow: none !important;
     border: 1px solid var(--border-color) !important;
 }
@@ -416,13 +423,14 @@ p {
 }
 
 [data-theme="dark"] .skill-tag:hover {
-    background: var(--text-color);
+    background: var(--primary-color);
     color: #09090b;
 }
 
 /* Dark mode - timeline dot */
 [data-theme="dark"] .timeline-item::before {
     background: var(--primary-color);
+    box-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
 }
 
 /* Dark mode - footer */
@@ -432,17 +440,17 @@ p {
 }
 
 [data-theme="dark"] footer a:hover {
-    color: var(--text-color) !important;
+    color: var(--primary-color) !important;
 }
 
-/* Dark mode - profile picture */
+/* Dark mode - profile picture with glow */
 [data-theme="dark"] .profile-pic {
-    box-shadow: var(--shadow-heavy);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 40px rgba(96, 165, 250, 0.1);
     border-color: var(--bg-card);
 }
 
 [data-theme="dark"] .profile-pic:hover {
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6), 0 0 60px rgba(96, 165, 250, 0.15);
 }
 
 /* Dark mode - custom scrollbar */
@@ -466,7 +474,7 @@ p {
 
 /* Dark mode - text selection */
 [data-theme="dark"] ::selection {
-    background: rgba(250, 250, 250, 0.2);
+    background: rgba(96, 165, 250, 0.3);
     color: var(--text-color);
 }
 
