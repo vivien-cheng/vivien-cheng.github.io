@@ -21,15 +21,15 @@
     --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
 }
 
-/* Dark mode variables - Dark Blue theme (no red) */
+/* Dark mode variables - Dark Green theme */
 [data-theme="dark"] {
-    --primary-color: #5a8fc7;
-    --primary-hover: #4a7ab0;
-    --accent-color: #8ba3c4;
-    --bg-color: #1a2332;
+    --primary-color: #4a9d5b;
+    --primary-hover: #3d8a4d;
+    --accent-color: #7cb587;
+    --bg-color: #1a2e1f;
     --text-color: #F8F8F8;
-    --border-color: #2d3a4f;
-    --light-color: #243044;
+    --border-color: #2d4a35;
+    --light-color: #243d2a;
     --dark-color: #F8F8F8;
     --shadow-light: 0 2px 4px rgba(0,0,0,.3);
     --shadow-medium: 0 4px 8px rgba(0,0,0,.4);
@@ -260,79 +260,79 @@ p {
 }
 
 [data-theme="dark"] .navbar-brand {
-    color: #1a2332 !important;
+    color: #1a2e1f !important;
 }
 
 [data-theme="dark"] .navbar-nav .nav-link {
-    color: #1a2332 !important;
+    color: #1a2e1f !important;
 }
 
 /* Dark mode - lighter color for secondary text */
 [data-theme="dark"] .reference .title {
-    color: #8ba3c4 !important;
+    color: #7cb587 !important;
 }
 
 [data-theme="dark"] .col-md-2 a {
-    color: #b8c5d6 !important;
+    color: #a8d4b0 !important;
 }
 
 /* Dark mode - buttons and interactive elements */
 [data-theme="dark"] .btn-primary {
-    background-color: #2d3a4f !important;
-    border-color: #2d3a4f !important;
+    background-color: #2d4a35 !important;
+    border-color: #2d4a35 !important;
     color: #F8F8F8 !important;
 }
 
 [data-theme="dark"] .btn-primary:hover,
 [data-theme="dark"] .btn-primary:focus,
 [data-theme="dark"] .btn-primary:active {
-    background-color: #3d4a5f !important;
-    border-color: #3d4a5f !important;
+    background-color: #3d5a45 !important;
+    border-color: #3d5a45 !important;
 }
 
 /* Dark mode - navbar hover states */
 [data-theme="dark"] .navbar-nav .nav-link:hover,
 [data-theme="dark"] .navbar-nav .nav-item.active .nav-link {
-    background-color: #1a2332 !important;
+    background-color: #1a2e1f !important;
     color: #F8F8F8 !important;
 }
 
 /* Dark mode - theme toggle button */
 [data-theme="dark"] .theme-toggle {
-    border-color: #1a2332 !important;
-    color: #1a2332 !important;
+    border-color: #1a2e1f !important;
+    color: #1a2e1f !important;
 }
 
 [data-theme="dark"] .theme-toggle:hover {
-    background-color: #1a2332 !important;
+    background-color: #1a2e1f !important;
     color: #F8F8F8 !important;
 }
 
 /* Dark mode - links in bio */
 [data-theme="dark"] .col-md-10 a {
-    color: #7db4e6 !important;
+    color: #7de68a !important;
 }
 
 /* Dark mode - arxiv/publication links */
 [data-theme="dark"] .arxiv-link {
-    background-color: #2d3a4f !important;
+    background-color: #2d4a35 !important;
 }
 
 [data-theme="dark"] .arxiv-link:hover {
-    background-color: #3d4a5f !important;
+    background-color: #3d5a45 !important;
 }
 
 /* Dark mode - award date badges */
 [data-theme="dark"] .award-date {
-    background-color: #2d3a4f !important;
+    background-color: #2d4a35 !important;
     color: #F8F8F8 !important;
 }
 
 /* Dark mode - logo banner matches background */
 [data-theme="dark"] .logo-banner {
-    background: #1a2332 !important;
+    background: #1a2e1f !important;
     box-shadow: none !important;
-    border: 1px solid #4a5568 !important;
+    border: 1px solid #4a6850 !important;
 }
 
 /* Dark mode - invert Tesla logo colors */
@@ -342,46 +342,46 @@ p {
 
 /* Dark mode - section heading underline */
 [data-theme="dark"] section h2::after {
-    background: linear-gradient(135deg, #5a8fc7, #8ba3c4);
+    background: linear-gradient(135deg, #4a9d5b, #7cb587);
 }
 
 /* Dark mode - reference card accent */
 [data-theme="dark"] .reference::before {
-    background: #5a8fc7;
+    background: #4a9d5b;
 }
 
 /* Dark mode - reference hover border */
 [data-theme="dark"] .reference:hover {
-    border-color: #5a8fc7;
+    border-color: #4a9d5b;
 }
 
 /* Dark mode - content card accent */
 [data-theme="dark"] .content-card::before {
-    background: linear-gradient(135deg, #5a8fc7, #8ba3c4);
+    background: linear-gradient(135deg, #4a9d5b, #7cb587);
 }
 
 /* Dark mode - content card hover */
 [data-theme="dark"] .content-card:hover {
-    border-color: #5a8fc7;
+    border-color: #4a9d5b;
 }
 
 /* Dark mode - skill tags */
 [data-theme="dark"] .skill-tag {
-    background: #2d3a4f;
+    background: #2d4a35;
 }
 
 [data-theme="dark"] .skill-tag:hover {
-    background: #3d4a5f;
+    background: #3d5a45;
 }
 
 /* Dark mode - timeline dot */
 [data-theme="dark"] .timeline-item::before {
-    background: #5a8fc7;
+    background: #4a9d5b;
 }
 
 /* Dark mode - footer link hover */
 [data-theme="dark"] footer a:hover {
-    color: #5a8fc7 !important;
+    color: #4a9d5b !important;
 }
 
 .hero-subtitle {
