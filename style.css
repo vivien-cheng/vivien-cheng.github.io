@@ -21,23 +21,23 @@
     --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
 }
 
-/* Dark mode variables - Clean Minimalist theme */
+/* Dark mode variables - Professional Dark theme */
 [data-theme="dark"] {
-    --primary-color: #60a5fa;
-    --primary-hover: #3b82f6;
-    --accent-color: #93c5fd;
-    --bg-color: #111111;
-    --bg-card: #191919;
-    --bg-elevated: #222222;
-    --text-color: #f5f5f5;
-    --text-secondary: #9ca3af;
-    --border-color: rgba(255, 255, 255, 0.08);
-    --light-color: #222222;
-    --dark-color: #f5f5f5;
-    --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.2);
-    --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.3);
-    --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.4);
-    --shadow-glow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --primary-color: #fafafa;
+    --primary-hover: #e4e4e7;
+    --accent-color: #a1a1aa;
+    --bg-color: #09090b;
+    --bg-card: #18181b;
+    --bg-elevated: #27272a;
+    --text-color: #fafafa;
+    --text-secondary: #a1a1aa;
+    --border-color: #27272a;
+    --light-color: #27272a;
+    --dark-color: #fafafa;
+    --shadow-light: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Import Google Fonts */
@@ -271,12 +271,12 @@ p {
 [data-theme="dark"] .reference,
 [data-theme="dark"] .content-card {
     background: var(--bg-card) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid var(--border-color) !important;
 }
 
 [data-theme="dark"] .reference:hover,
 [data-theme="dark"] .content-card:hover {
-    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: #3f3f46 !important;
     box-shadow: var(--shadow-medium);
 }
 
@@ -300,16 +300,16 @@ p {
 
 /* Dark mode - buttons */
 [data-theme="dark"] .btn-primary {
-    background: var(--primary-color) !important;
+    background: var(--text-color) !important;
     border: none !important;
-    color: #111111 !important;
+    color: #09090b !important;
     font-weight: 600;
 }
 
 [data-theme="dark"] .btn-primary:hover,
 [data-theme="dark"] .btn-primary:focus,
 [data-theme="dark"] .btn-primary:active {
-    background: var(--primary-hover) !important;
+    background: var(--text-secondary) !important;
     transform: translateY(-1px);
 }
 
@@ -335,36 +335,38 @@ p {
 
 /* Dark mode - theme toggle button */
 [data-theme="dark"] .theme-toggle {
-    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: var(--border-color) !important;
     color: var(--text-secondary) !important;
     background: var(--bg-elevated) !important;
 }
 
 [data-theme="dark"] .theme-toggle:hover {
-    border-color: var(--primary-color) !important;
-    color: var(--primary-color) !important;
+    border-color: var(--text-secondary) !important;
+    color: var(--text-color) !important;
 }
 
 /* Dark mode - links */
 [data-theme="dark"] .col-md-10 a {
-    color: var(--primary-color) !important;
+    color: var(--text-color) !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
     transition: all 0.2s ease;
 }
 
 [data-theme="dark"] .col-md-10 a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 /* Dark mode - arxiv/publication links */
 [data-theme="dark"] .arxiv-link {
     background: var(--bg-elevated) !important;
-    color: var(--primary-color) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color);
 }
 
 [data-theme="dark"] .arxiv-link:hover {
-    background: var(--primary-color) !important;
-    color: #111111 !important;
+    background: var(--text-color) !important;
+    color: #09090b !important;
 }
 
 /* Dark mode - award date badges */
@@ -377,8 +379,8 @@ p {
 /* Dark mode - logo banner */
 [data-theme="dark"] .logo-banner {
     background: var(--bg-card) !important;
-    box-shadow: var(--shadow-light) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: none !important;
+    border: 1px solid var(--border-color) !important;
 }
 
 /* Dark mode - invert Tesla logo colors */
@@ -410,12 +412,12 @@ p {
 [data-theme="dark"] .skill-tag {
     background: var(--bg-elevated);
     color: var(--text-color);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
 }
 
 [data-theme="dark"] .skill-tag:hover {
-    background: var(--primary-color);
-    color: #111111;
+    background: var(--text-color);
+    color: #09090b;
 }
 
 /* Dark mode - timeline dot */
@@ -426,11 +428,11 @@ p {
 /* Dark mode - footer */
 [data-theme="dark"] footer {
     background: var(--bg-card) !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid var(--border-color);
 }
 
 [data-theme="dark"] footer a:hover {
-    color: var(--primary-color) !important;
+    color: var(--text-color) !important;
 }
 
 /* Dark mode - profile picture */
@@ -464,7 +466,7 @@ p {
 
 /* Dark mode - text selection */
 [data-theme="dark"] ::selection {
-    background: rgba(96, 165, 250, 0.3);
+    background: rgba(250, 250, 250, 0.2);
     color: var(--text-color);
 }
 
