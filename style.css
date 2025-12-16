@@ -1,20 +1,20 @@
-/* Root variables for theming */
+/* Root variables for theming - Light Teal theme */
 :root {
-    --primary-color: #1B5E20;
-    --primary-hover: #0D3E10;
+    --primary-color: #0D9488;
+    --primary-hover: #0F766E;
     --secondary-color: #334E68;
-    --accent-color: #C48F1F;
-    --success-color: #28a745;
-    --warning-color: #C48F1F;
-    --danger-color: #1B5E20;
-    --light-color: #F8F8F8;
-    --dark-color: #1A1A1A;
+    --accent-color: #14B8A6;
+    --success-color: #14B8A6;
+    --warning-color: #F59E0B;
+    --danger-color: #EF4444;
+    --light-color: #F0FDFA;
+    --dark-color: #134E4A;
     --bg-color: #ffffff;
-    --text-color: #1A1A1A;
-    --border-color: #E5E5E5;
-    --shadow-light: 0 2px 4px rgba(0,0,0,.1);
-    --shadow-medium: 0 4px 8px rgba(0,0,0,.12);
-    --shadow-heavy: 0 8px 32px rgba(0,0,0,.15);
+    --text-color: #134E4A;
+    --border-color: #CCFBF1;
+    --shadow-light: 0 2px 4px rgba(13, 148, 136, 0.1);
+    --shadow-medium: 0 4px 8px rgba(13, 148, 136, 0.12);
+    --shadow-heavy: 0 8px 32px rgba(13, 148, 136, 0.15);
     --border-radius: 12px;
     --transition: all 0.3s ease;
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
@@ -393,6 +393,11 @@ p {
 /* Dark mode - invert Tesla logo colors */
 [data-theme="dark"] .logo-banner img[alt="Tesla"] {
     filter: invert(1) brightness(2);
+}
+
+/* Dark mode - Volkswagen logo white outline */
+[data-theme="dark"] .logo-banner img[alt="Volkswagen"] {
+    filter: drop-shadow(0 0 1px white) drop-shadow(0 0 1px white);
 }
 
 /* Dark mode - section heading underline */
