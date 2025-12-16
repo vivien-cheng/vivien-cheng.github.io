@@ -397,7 +397,7 @@ p {
 
 /* Dark mode - Volkswagen logo white outline */
 [data-theme="dark"] .logo-banner img[alt="Volkswagen"] {
-    filter: drop-shadow(0 0 1px white) drop-shadow(0 0 1px white);
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 2px white) drop-shadow(0 0 1px white);
 }
 
 /* Dark mode - section heading underline */
