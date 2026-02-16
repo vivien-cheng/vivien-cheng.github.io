@@ -19,7 +19,7 @@
     --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.1);
     --border-radius: 12px;
     --transition: all 0.3s ease;
-    --font-primary: 'Times New Roman', Times, Georgia, serif;
+    --font-primary: Calibri, 'Gill Sans', 'Trebuchet MS', sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
 }
 
@@ -47,7 +47,8 @@ body {
     font-family: var(--font-primary);
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.6;
+    font-size: 1.05rem;
+    line-height: 1.7;
     transition: var(--transition);
 }
 
