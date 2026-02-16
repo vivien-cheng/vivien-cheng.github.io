@@ -23,24 +23,6 @@
     --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
 }
 
-/* Dark mode variables - Premium Dark theme with blue accent */
-[data-theme="dark"] {
-    --primary-color: #60a5fa;
-    --primary-hover: #3b82f6;
-    --accent-color: #93c5fd;
-    --bg-color: #09090b;
-    --bg-card: #18181b;
-    --bg-elevated: #27272a;
-    --text-color: #fafafa;
-    --text-secondary: #a1a1aa;
-    --border-color: rgba(255, 255, 255, 0.08);
-    --light-color: #27272a;
-    --dark-color: #fafafa;
-    --shadow-light: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.5);
-    --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.6);
-    --shadow-glow: 0 0 20px rgba(96, 165, 250, 0.15);
-}
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -117,28 +99,6 @@ p {
     background-color: var(--primary-hover);
 }
 
-/* Theme toggle button */
-.theme-toggle {
-    background: none;
-    border: 2px solid var(--border-color);
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: var(--transition);
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color);
-}
-
-.theme-toggle:hover {
-    border-color: var(--primary-hover);
-    background-color: var(--primary-hover);
-    color: white;
-    transform: rotate(180deg);
-}
 
 /* Social media icons spacing */
 .navbar-nav .nav-link i {
@@ -157,9 +117,6 @@ p {
     height: 1.5em;
 }
 
-[data-theme="dark"] .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
 
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -188,11 +145,6 @@ p {
         padding: 0.75rem 1rem;
     }
     
-    .theme-toggle {
-        margin: 0.5rem auto;
-        width: 45px;
-        height: 45px;
-    }
 }
 
 /* Hero section */
@@ -251,10 +203,6 @@ p {
     border-bottom: 1px solid #E5E5E5;
 }
 
-[data-theme="dark"] .navbar.bg-primary {
-    background-color: white !important;
-    border-bottom: 1px solid #E5E5E5;
-}
 
 /* Navbar text colors for white background */
 .navbar-brand {
@@ -265,220 +213,6 @@ p {
     color: #1A1A1A !important;
 }
 
-/* ============================================
-   PROFESSIONAL DARK MODE ENHANCEMENTS
-   ============================================ */
-
-/* Dark mode - glassmorphism cards */
-[data-theme="dark"] .reference,
-[data-theme="dark"] .content-card {
-    background: rgba(24, 24, 27, 0.8) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--border-color) !important;
-}
-
-[data-theme="dark"] .reference:hover,
-[data-theme="dark"] .content-card:hover {
-    border-color: rgba(96, 165, 250, 0.3) !important;
-    box-shadow: var(--shadow-glow);
-}
-
-/* Dark mode - accent left border on hover */
-[data-theme="dark"] .reference {
-    border-left: 3px solid transparent !important;
-}
-
-[data-theme="dark"] .reference:hover {
-    border-left-color: var(--primary-color) !important;
-}
-
-/* Dark mode - lighter color for secondary text */
-[data-theme="dark"] .reference .title {
-    color: var(--accent-color) !important;
-}
-
-[data-theme="dark"] .col-md-2 a {
-    color: var(--text-secondary) !important;
-}
-
-/* Dark mode - buttons with glow */
-[data-theme="dark"] .btn-primary {
-    background: var(--primary-color) !important;
-    border: none !important;
-    color: #09090b !important;
-    font-weight: 600;
-}
-
-[data-theme="dark"] .btn-primary:hover,
-[data-theme="dark"] .btn-primary:focus,
-[data-theme="dark"] .btn-primary:active {
-    background: var(--primary-hover) !important;
-    box-shadow: 0 0 24px rgba(96, 165, 250, 0.3);
-    transform: translateY(-1px);
-}
-
-/* Dark mode - navbar with glassmorphism */
-[data-theme="dark"] .navbar.bg-primary {
-    background: rgba(9, 9, 11, 0.8) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border-color) !important;
-}
-
-[data-theme="dark"] .navbar-brand {
-    color: var(--primary-color) !important;
-}
-
-[data-theme="dark"] .navbar-nav .nav-link {
-    color: var(--text-secondary) !important;
-}
-
-[data-theme="dark"] .navbar-nav .nav-link:hover,
-[data-theme="dark"] .navbar-nav .nav-item.active .nav-link {
-    background-color: var(--bg-elevated) !important;
-    color: var(--text-color) !important;
-}
-
-/* Dark mode - theme toggle button */
-[data-theme="dark"] .theme-toggle {
-    border-color: var(--border-color) !important;
-    color: var(--text-secondary) !important;
-    background: var(--bg-elevated) !important;
-}
-
-[data-theme="dark"] .theme-toggle:hover {
-    border-color: var(--primary-color) !important;
-    color: var(--primary-color) !important;
-    box-shadow: 0 0 12px rgba(96, 165, 250, 0.2);
-}
-
-/* Dark mode - links */
-[data-theme="dark"] .col-md-10 a {
-    color: var(--primary-color) !important;
-    transition: all 0.2s ease;
-}
-
-[data-theme="dark"] .col-md-10 a:hover {
-    text-shadow: 0 0 12px rgba(96, 165, 250, 0.4);
-}
-
-/* Dark mode - arxiv/publication links */
-[data-theme="dark"] .arxiv-link {
-    background: var(--bg-elevated) !important;
-    color: var(--primary-color) !important;
-    border: 1px solid var(--border-color);
-}
-
-[data-theme="dark"] .arxiv-link:hover {
-    background: var(--primary-color) !important;
-    color: #09090b !important;
-    box-shadow: 0 0 16px rgba(96, 165, 250, 0.25);
-}
-
-/* Dark mode - award date badges */
-[data-theme="dark"] .award-date {
-    background: rgba(96, 165, 250, 0.1) !important;
-    color: var(--primary-color) !important;
-    border: 1px solid rgba(96, 165, 250, 0.2);
-}
-
-/* Dark mode - logo banner with glassmorphism */
-[data-theme="dark"] .logo-banner {
-    background: rgba(24, 24, 27, 0.8) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: none !important;
-    border: 1px solid var(--border-color) !important;
-}
-
-/* Dark mode - invert Tesla logo colors */
-[data-theme="dark"] .logo-banner img[alt="Tesla"] {
-    filter: invert(1) brightness(2);
-}
-
-/* Dark mode - Volkswagen logo with clean white outline */
-[data-theme="dark"] .logo-banner img[alt="Volkswagen"] {
-    filter: brightness(0) invert(1);
-}
-
-/* Dark mode - section heading underline */
-[data-theme="dark"] section h2::after {
-    background: linear-gradient(90deg, var(--primary-color), transparent);
-}
-
-/* Dark mode - reference card accent */
-[data-theme="dark"] .reference::before {
-    background: var(--primary-color);
-}
-
-/* Dark mode - content card accent */
-[data-theme="dark"] .content-card::before {
-    background: linear-gradient(180deg, var(--primary-color), var(--primary-hover));
-}
-
-/* Dark mode - skill tags */
-[data-theme="dark"] .skill-tag {
-    background: var(--bg-elevated);
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-}
-
-[data-theme="dark"] .skill-tag:hover {
-    background: var(--primary-color);
-    color: #09090b;
-}
-
-/* Dark mode - timeline dot */
-[data-theme="dark"] .timeline-item::before {
-    background: var(--primary-color);
-    box-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
-}
-
-/* Dark mode - footer */
-[data-theme="dark"] footer {
-    background: var(--bg-card) !important;
-    border-top: 1px solid var(--border-color);
-}
-
-[data-theme="dark"] footer a:hover {
-    color: var(--primary-color) !important;
-}
-
-/* Dark mode - profile picture with glow */
-[data-theme="dark"] .profile-pic {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 40px rgba(96, 165, 250, 0.1);
-    border-color: var(--bg-card);
-}
-
-[data-theme="dark"] .profile-pic:hover {
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6), 0 0 60px rgba(96, 165, 250, 0.15);
-}
-
-/* Dark mode - custom scrollbar */
-[data-theme="dark"]::-webkit-scrollbar {
-    width: 10px;
-}
-
-[data-theme="dark"]::-webkit-scrollbar-track {
-    background: var(--bg-color);
-}
-
-[data-theme="dark"]::-webkit-scrollbar-thumb {
-    background: var(--bg-elevated);
-    border-radius: 5px;
-    border: 2px solid var(--bg-color);
-}
-
-[data-theme="dark"]::-webkit-scrollbar-thumb:hover {
-    background: var(--text-secondary);
-}
-
-/* Dark mode - text selection */
-[data-theme="dark"] ::selection {
-    background: rgba(96, 165, 250, 0.3);
-    color: var(--text-color);
-}
 
 /* ============================================
    LIGHT MODE - Blue links only
