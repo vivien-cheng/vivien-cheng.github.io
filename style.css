@@ -215,7 +215,7 @@ p {
 
 /* Experience section styles */
 .section-heading {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -251,18 +251,18 @@ p {
 }
 
 .experience-item strong {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
 }
 
 .experience-date {
     float: right;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--secondary-color);
     font-weight: 500;
 }
 
 .experience-desc {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--secondary-color);
     margin-bottom: 0;
     margin-top: 0.35rem;
@@ -430,7 +430,7 @@ section h2::after {
 
 .journal {
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 1rem;
     opacity: 0.8;
 }
 
@@ -441,7 +441,7 @@ section h2::after {
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: var(--transition);
     margin-left: 1rem;
@@ -459,7 +459,7 @@ section h2::after {
     color: var(--text-color);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     float: right;
 }
@@ -472,7 +472,7 @@ section h2::after {
     padding: 0.5rem 1rem;
     border-radius: 25px;
     margin: 0.25rem;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -585,7 +585,7 @@ footer {
     padding: 2rem 0;
     margin-top: 2rem;
     border-top: 1px solid var(--border-color);
-    font-size: 0.85rem;
+    font-size: 0.95rem;
 }
 
 footer a {
