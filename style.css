@@ -101,7 +101,7 @@ p {
 
 /* Social media icons spacing */
 .navbar-nav .nav-link i {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
 }
 
 /* Navbar toggler (hamburger menu) */
@@ -206,7 +206,7 @@ p {
 /* Navbar text colors for white background */
 .navbar-brand {
     color: var(--primary-color) !important;
-    font-size: 1.4rem;
+    font-size: 1.55rem;
 }
 
 .navbar-nav .nav-link {
