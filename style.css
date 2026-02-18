@@ -355,6 +355,10 @@ section h2::after {
     border-radius: 2px;
 }
 
+#about > .row h2::after {
+    display: none;
+}
+
 /* Card-based layout for content */
 .content-card {
     background: var(--bg-color);
