@@ -242,7 +242,7 @@ p {
 }
 
 .experience-item strong {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
 }
 
 .experience-date {
@@ -253,13 +253,13 @@ p {
 }
 
 .experience-subtitle {
-    font-size: 0.88rem;
+    font-size: 0.95rem;
     color: var(--secondary-color);
     margin-top: 0.1rem;
 }
 
 .experience-desc {
-    font-size: 0.85rem;
+    font-size: 0.92rem;
     color: var(--secondary-color);
     margin-bottom: 0;
     margin-top: 0.25rem;
@@ -271,7 +271,7 @@ p {
 .social-icons a {
     color: var(--secondary-color);
     margin: 0 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     transition: var(--transition);
 }
 
