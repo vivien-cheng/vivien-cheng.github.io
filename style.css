@@ -50,6 +50,7 @@ body {
 
 .container {
     flex: 1;
+    max-width: 800px;
 }
 
 /* Enhanced typography */
