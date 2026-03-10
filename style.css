@@ -11,7 +11,7 @@
     --danger-color: #ef4444;
     --light-color: #f4f4f5;
     --dark-color: #18181b;
-    --bg-color: #fafafa;
+    --bg-color: #ffffff;
     --text-color: #18181b;
     --border-color: #e4e4e7;
     --shadow-light: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -192,11 +192,6 @@ p {
     border-color: var(--primary-hover) !important;
 }
 
-/* Navbar background override - always white */
-.navbar.bg-primary {
-    background-color: white !important;
-    border-bottom: 1px solid #E5E5E5;
-}
 
 
 /* Navbar text colors for white background */
@@ -212,15 +207,12 @@ p {
 
 /* Experience section styles */
 .section-heading {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--secondary-color);
+    color: var(--text-color);
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border-color);
 }
 
 .section-heading:first-of-type {
@@ -235,16 +227,12 @@ p {
 }
 
 .experience-item {
-    background: white;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1rem 1.25rem;
-    transition: var(--transition);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.experience-item:hover {
-    border-color: var(--link-color);
-    box-shadow: var(--shadow-light);
+.experience-item:last-child {
+    border-bottom: none;
 }
 
 .experience-item strong {
@@ -265,6 +253,19 @@ p {
     margin-top: 0.35rem;
     line-height: 1.7;
     opacity: 1;
+}
+
+/* Social icons */
+.social-icons a {
+    color: var(--secondary-color);
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 /* ============================================
